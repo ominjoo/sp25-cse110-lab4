@@ -50,6 +50,8 @@
     f. true because `Boolean(2)` coerces 2 into a boolean value `true`. true === true is true!
 
 15. `==` checks for loose equality, just if the values are the same or not. So, '2' == 2 returns true even through they are different types. `===` checks for strict equality, so the value and the type must be the same in order to return true. So, '2' === 2 will be false.
-16. the answer is in part2-question16.js
-17. 
+16. The answer is in part2-question16.js
+17. The result will be [2, 4, 6]. This is because the function call on line 13 passes the `doSomething` function as an argument to the `callback` parameter, and within the loop of the `modifyArray` function, the `doSomething` function is called with the array element of index `i` passed in. The `doSomething` function doubles the number its given.
+18. The answer is in part2-question18.js
+19. output: 1 4 3 2. This is because lines 2 and 5 are synchronous functions which mean that execute as soon as the function is called. Lines 3 and 4 are asynchronous functions so they will first wait for the synchronous functions to finish executing. Then, line 4 has a shorter delay value so it will execute before line 3.
 
