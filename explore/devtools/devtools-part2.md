@@ -1,2 +1,2 @@
 1. The bug was that the values of `num1` and `num2` were being read as strings, and so the `+` operator acted as a concatenation operator that simply joined the numbers together as if they were strings.
-2. I fixed it by casting the `num1` and `num2` to ints before they are passed into `calculateSum`. I also check that they are valid types so if theyre actual numbers or not NaN.
+2. I fixed it by casting the `num1` and `num2` to ints before they are passed into `calculateSum`. I also check that they are valid types so if theyre actual numbers or not NaN. 
