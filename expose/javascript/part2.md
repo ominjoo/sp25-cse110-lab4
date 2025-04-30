@@ -10,9 +10,9 @@
 10. 3 will be printed to console. There is no attempt to modify `length` which is correct since its a `const`, and it also has function scope.
 11. It will return [50, 100, 150]. Although line 7 is concerning and seems like it should throw an error, it is technically creating a new `const` called `discountedPrice` each iteration, not modifying an existing `const`.
 12. 
-    a. let name = student.name;
+    a. student.name;
 
-    b. let grad_year = student['Grad Year'];
+    b. student['Grad Year'];
 
     c. student.greeting();
 
@@ -22,7 +22,7 @@
 13. 
     a. '32' because integers like 2 map to their string representation and `+` is treated like the string concatenation operator
 
-    b. '3' because there is no way to subtract strings from each other using `-`, so JS knows we are trying to work with integers.
+    b. 1 because there is no way to subtract strings from each other using `-`, so JS knows we are trying to work with integers.
 
     c. 3 because when there is a number + `null`, the null value maps to 0 
 
